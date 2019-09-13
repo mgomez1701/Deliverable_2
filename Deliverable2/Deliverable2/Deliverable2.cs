@@ -20,10 +20,19 @@ namespace Deliverable2
           
 
             Console.WriteLine(a = "1). Action");
+            optionOne = Console.ReadLine();
+
             Console.WriteLine(b = "2). Chill Out");
+            optionTwo = Console.ReadLine();
+
             Console.WriteLine(c = "3). Push it to the limit");
-            Console.WriteLine(d = "1). Craving food");
+            optionThree = Console.ReadLine();
+
+            Console.WriteLine(d = "4). Craving food");
+            optionFour = Console.ReadLine();
             Console.ReadLine();
+
+
 
 
 
