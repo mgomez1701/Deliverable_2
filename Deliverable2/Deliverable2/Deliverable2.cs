@@ -11,7 +11,7 @@ namespace Deliverable2
         static void Main(string[] args)
         {
 
-            string question;      
+            string question, question2; 
 
 
             Console.WriteLine("Hello user, what are you in the mood for?");
@@ -23,11 +23,16 @@ namespace Deliverable2
             Console.WriteLine("Danger");
             Console.WriteLine("Craving food");
             question = Convert.ToString(Console.ReadLine());
+            
 
 
             if (question == "Action" || question == "Chill Out" || question == "Danger" || question == "Craving Food")
             {
                 Console.WriteLine("How many people are you bringing with you?");
+                Console.WriteLine("0");
+                Console.WriteLine("1-4?");
+                Console.WriteLine("5-10");
+                Console.WriteLine("11+?");
                 Console.ReadLine();
 
             }
@@ -36,9 +41,11 @@ namespace Deliverable2
             {
                 Console.WriteLine("I did not understand. Please try again.");
                 Console.ReadLine();
+
+                
             }
-            
-            
+
+                
         }
     }
 }
