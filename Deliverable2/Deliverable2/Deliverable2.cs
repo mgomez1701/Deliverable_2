@@ -21,42 +21,27 @@ namespace Deliverable2
             Console.WriteLine("Chill Out");
             Console.WriteLine("Danger");
             Console.WriteLine("Craving food");
-            ch = Convert.ToString(Console.ReadLine()); 
-            
-           
+            ch = Convert.ToString(Console.ReadLine());
+          
+
             switch (ch)
             {
                 case "Action":
                     Console.WriteLine("How many of you are going?");
-                    Console.WriteLine("0");
-                    Console.WriteLine("1-4");
-                    Console.WriteLine("5-10");
-                    Console.WriteLine("11+");
-                    Console.ReadLine();
+                 
                     break;
                 case "Chill Out":
                     Console.WriteLine("How many of you are going?");
-                    Console.WriteLine("0");
-                    Console.WriteLine("1-4");
-                    Console.WriteLine("5-10");
-                    Console.WriteLine("11+");
-                    Console.ReadLine();
+                   
                     break;
                 case "Danger":
                     Console.WriteLine("How many of you are going?");
-                    Console.WriteLine("0");
-                    Console.WriteLine("1-4");
-                    Console.WriteLine("5-10");
-                    Console.WriteLine("11+");
-                    Console.ReadLine();
+                  
                     break;
                 case "Craving Food":
-                    Console.WriteLine("How many of you are going?");
-                    Console.WriteLine("0");
-                    Console.WriteLine("1-4");
-                    Console.WriteLine("5-10");
-                    Console.WriteLine("11+");
-                    Console.ReadLine();
+                    Console.WriteLine("How many of you are going?");                
+                   
+
                     break;
                 default:
                     Console.WriteLine("I am not yet programmed to understand that. Please make sure you type the words out just like they look.");
@@ -64,8 +49,12 @@ namespace Deliverable2
                     break;
 
             }
-
             
+           
+            Console.WriteLine("0");
+            Console.WriteLine("1-4");
+            Console.WriteLine("5-10");
+            Console.WriteLine("11+");
             rh = Convert.ToString(Console.ReadLine());
 
             switch (rh)
@@ -91,7 +80,7 @@ namespace Deliverable2
                     Console.ReadLine();
                     break;
                 default:
-                    Console.WriteLine("I am not yet programmed to understand that. Please make sure you type the numbers out just like they look.");
+                    Console.WriteLine("I am not yet programmed to understand that. Please make sure you type the numbers out exaclty like they look.");
                     Console.ReadLine();
                     break;
 
