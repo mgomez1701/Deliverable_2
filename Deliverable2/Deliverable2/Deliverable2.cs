@@ -27,6 +27,7 @@ namespace Deliverable2
             switch (ch)
             {
                 case "Action":
+
                     Console.WriteLine("How many of you are going?");
                  
                     break;
@@ -44,13 +45,12 @@ namespace Deliverable2
 
                     break;
                 default:
-                    Console.WriteLine("I am not yet programmed to understand that. Please make sure you type the words out just like they look.");
+                    Console.WriteLine("I am not yet programmed to understand that. Please make sure to type the words out exactly how they look. Caps matter.");
                     Console.ReadLine();
                     break;
 
             }
-            
-           
+                   
             Console.WriteLine("0");
             Console.WriteLine("1-4");
             Console.WriteLine("5-10");
@@ -80,7 +80,7 @@ namespace Deliverable2
                     Console.ReadLine();
                     break;
                 default:
-                    Console.WriteLine("I am not yet programmed to understand that. Please make sure you type the numbers out exaclty like they look.");
+                    Console.WriteLine("I am not yet programmed to understand that. Please make sure you type the numbers out exactly like they look.");
                     Console.ReadLine();
                     break;
 
