@@ -11,8 +11,11 @@ namespace Deliverable2
         static void Main(string[] args)
         {
 
-            string ch;
-            int value= 0;
+            string ch ="";
+            int value = 12;
+            
+           
+
 
 
 
@@ -31,73 +34,70 @@ namespace Deliverable2
             { 
                 case "Action":
                     Console.WriteLine("I love doing action packed activities! How many of you are going?");
-                    
-                    value = int.Parse(Console.ReadLine());
+                    value = Convert.ToInt32(Console.ReadLine());
+                   
 
                     break;
 
                 case "Chill Out":
                     Console.WriteLine("Chilling out is what I do best. How many of you are going?");
-                    value = int.Parse(Console.ReadLine());
+                    value = Convert.ToInt32(Console.ReadLine());
 
                     break;
 
                 case "Danger":
-                    Console.WriteLine("You are freaking me out, but I will help. How many of you are going?");
-                    value = int.Parse(Console.ReadLine());
+                    Console.WriteLine("You are freaking me out a bit, but I can help with Danger. How many of you are going?");
+                    value = Convert.ToInt32(Console.ReadLine());
 
                     break;
 
                 case "Craving Food":
                     Console.WriteLine("I got the best spot for you to How many of you are going?");
-                    value = int.Parse(Console.ReadLine());
+                    value = Convert.ToInt32(Console.ReadLine());
 
                     break;
 
                 default:
                     Console.WriteLine("I am not yet programmed to understand that. Please make sure to type the words out exactly how they look. Caps matter.");
                     Console.ReadLine();
-
+                    
                     break;
 
             }
 
+            if (int.TryParse(ch, out value))
+                value = Convert.ToInt32(Console.ReadLine());
 
 
-            
 
-            if (value == 0 || value <= 11  && ch == "Craving Food")
+            if (value == 0 && ch == "Craving Food") 
             {
                 Console.WriteLine("Okay if you are in the mood for good food, I would go to Taco Bell in a Sedan");
                 Console.WriteLine("Thank you for chatting with me. Have fun. Good-bye!");
                 Console.ReadLine();
             }
 
-            else if (value != 0 || value <= 4 && ch == "Chill Out")
+            else if (value <= 4 && ch == "Chill Out")
             {
-                Console.WriteLine("If you are looking to chill out, you should go Hiking in the mountain. Be sure to pack your Sneakers");
+                Console.WriteLine("If you are looking to chill out, you should go Hiking in the mountains. Be sure to pack your Sneakers");
                 Console.WriteLine("Thank you for chatting with me. Have fun. Good-bye!");
                 Console.ReadLine();           
             }
             
-            else if (value != 0 || value <= 10 || value >= 5 || ch == "Action")
+            else if ( value <= 10  && ch == "Action")
             {
                 Console.WriteLine("If you are looking for action, Stock Car Racing in a Volkswagon Bus would be perfect!");
                 Console.WriteLine("Thank you for chatting with me. Have fun. Good-bye!");
                 Console.ReadLine();
             }
 
-            else if (value != 0 || value >= 11 || value <= 10  && ch == "Danger")
+            else if  (ch == "Danger")
             {
                 Console.WriteLine("If you are looking for danger, you should go Sky Diving! I have an Airplane that you can borrow!");
                 Console.WriteLine("Thank you for chatting with me. Have fun. Good-bye!");
                 Console.ReadLine();
             }
-
-            else
-
-            Console.WriteLine("I am not yet programmed to understand that. Please make sure you type the numbers out exactly like they look.");
-            Console.ReadLine();
+          
 
             Console.ReadLine();
                 
